@@ -1,0 +1,122 @@
+.portfolio-buttons{
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+}
+.portfolio-button{
+    min-width: fit-content;
+    padding: 10px 18px;
+    color: #fff;
+    border: 1px solid #374757;
+    margin: 8px 5px;
+}
+.portfolio-button:hover{
+    color: #fff;
+    border: 1px solid #374757;
+    background-color: transparent;
+}
+.portfolio-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.portfolio-item{
+    width: calc(33% - 15px);
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-item img{
+    width: 100%;
+    background-position: center;
+    transition: .4s;
+}
+
+.portfolio-overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0%;
+    height: 0%;
+    visibility: hidden;
+    background-color: rgba(43, 61, 79, .9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .4s;
+}
+
+.portfolio-overlay h4{
+    font-size: 16px;
+    letter-spacing: .6px;
+    color: #fff;
+    font-weight: 600;
+    transition: .4s;
+    margin-top: 200px;
+}
+
+.portfolio-overlay p{
+    color: #16c0f0;
+    font-size: 16px;
+    margin: 15px;
+    transition: .6s;
+    margin-top: 55px;
+}
+
+.portfolio-overlay-icons{
+    display: flex;
+    transition: .8s;
+    margin-top: 40px;
+}
+
+.portfolio-overlay-icons i{
+    color: #fff;
+    background-color: #16c0f0;
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.portfolio-item:hover .portfolio-overlay{
+    visibility: visible;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
+.portfolio-item:hover .portfolio-overlay h4{
+    margin-top: 0;
+}
+.portfolio-item:hover .portfolio-overlay p{
+    margin-top: 15px;
+}
+.portfolio-item:hover .portfolio-overlay-icons{
+    margin-top: 0;
+}
+.portfolio-item:hover img{
+    transform: scale(1.4);
+}
+
+
+@media(max-width: 1000px){
+    .portfolio-item{
+        width: calc(50% - 15px);
+    }
+}
+
+@media(max-width: 700px){
+    .portfolio-item{
+        width: 100%;
+    }
+    .portfolio-buttons{
+        flex-wrap: wrap;
+    }
+}
+

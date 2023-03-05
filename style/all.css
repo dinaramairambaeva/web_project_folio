@@ -1,0 +1,11 @@
+@import url("vendor/reset.css");
+@import url("components/base.css");
+@import url("components/header.css");
+@import url("components/home.css");
+@import url("components/about.css");
+@import url("components/services.css");
+@import url("components/resume.css");
+@import url("components/portfolio.css");
+@import url("components/testomonials.css");
+@import url("components/blog.css");
+@import url("components/contact.css");

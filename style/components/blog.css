@@ -1,0 +1,115 @@
+.blog-list{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.blog-items{
+    width: calc(50% - 15px);
+    background: #2b3d4f;
+    position: relative;
+    border: 3px solid #374757;
+    box-shadow: 0 4px 5px rgb(37 50 66 / 70%);
+    
+}
+
+.blog-items:hover .blog-content h4{
+    color: #16c0f0;
+}
+
+.blog-items:hover .blog-img img{
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.blog-img{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.blog-img img{
+    width: 100%;
+    opacity: .78;
+    transition: .4s;
+}
+
+.blog-content{
+    padding: 20px;
+}
+
+.blog-content h4{
+    position: relative;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 15px 0;
+    letter-spacing: .5px;
+    text-transform: capitalize;
+    color: #fff;
+    transition: .4s;
+}
+
+.blog-content a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .5px;
+    font-family: 'Open Sans', sans-serif;
+    transition: .4s;
+    display: inline-flex;
+    align-items: center;
+}
+.blog-content a i{
+    font-size: 8px;
+    margin: 5px;
+}
+
+.blog-content a:hover{
+    color: #16c0f0;
+}
+.blog-content span{
+    display: block;
+    margin: 15px 0 20px;
+    color: #c7c5c7;
+    font-size: 12px;
+}
+.blog-content span i:nth-child(2){
+    margin-left: 10px;
+}
+.blog-content span a{
+    color: #c7c5c7;
+    font-weight: 400;
+}
+
+.blog-content p{
+    line-height: 1.8;
+    font-weight: 400;
+    padding: 20px 0;
+    border-top: 1px solid #374757;
+    color: #c7c5c7;
+    font-size: 14px;
+}
+
+.post-category a{
+    position: absolute;
+    top: 75%;
+    left: -2px;
+    padding: 10px 22px;
+    background-color: #2b3d4f;
+    letter-spacing: 1px;
+    color: #16c0f0;
+    border-radius: 0 5px 5px 0;
+    z-index: 1;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@media(max-width: 1000px){
+    .blog-items{
+        width: 100%;
+    }
+    .blog-items:last-child{
+        display: none;
+    }
+}
